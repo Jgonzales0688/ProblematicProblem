@@ -69,22 +69,22 @@ namespace ProblematicProblem
 
     while (cont)
     {
-        //Console.Write("Connecting to the database");
-        //for (int i = 0; i < 10; i++)
-        //{
-        //    Console.Write(". ");
-        //    Thread.Sleep(500);
-        //}
-        //        Console.WriteLine();
-        //        Console.Write("Choosing your random activity");
-        //for (int i = 0; i < 9; i++)
-        //{
-        //    Console.Write(". ");
-        //    Thread.Sleep(500);
-        //}
-        Console.WriteLine();
+                Console.Write("Connecting to the database");
+                for (int i = 0; i < 10; i++)
+                {
+                    Console.Write(". ");
+                    Thread.Sleep(500);
+                }
+                Console.WriteLine();
+                Console.Write("Choosing your random activity");
+                for (int i = 0; i < 9; i++)
+                {
+                    Console.Write(". ");
+                    Thread.Sleep(500);
+                }
+                Console.WriteLine();
         int randomNumber = rng.Next(activities.Count);
-                string randomActivity = "Wine Tasting"; //activities[randomNumber];
+                string randomActivity = activities[randomNumber];
 
         if (userAge < 21 && randomActivity == "Wine Tasting")
         {
